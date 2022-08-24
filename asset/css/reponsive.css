@@ -1,0 +1,108 @@
+@media screen and (max-width: 1200px) {
+    #delivery_ctn h3{
+        font-size: 26px;
+    }
+    #delivery_ctn > img{
+        display: none;
+    }
+     /*bbq_burger*/
+    #product_info_ctn .right .eve_items h2{
+        font-size: 16px;
+    }
+    /*burger.html*/
+    #burgers_ctn .left .food_ctn{
+        width: calc(100%/2);
+        padding: 10px;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    /*Header*/
+    .phone_number>a,
+    .address>span {
+        font-size: 12px;
+    }
+
+    .dropdown_img {
+        display: block;
+        width: auto;
+    }
+
+    #home_dropdown #special_offer {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /*Promotion*/
+    #promotion_ctn {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #promotion_ctn .center_col {
+        display: block;
+        width: 100%;
+    }
+
+    #promotion_ctn .left_col,
+    #promotion_ctn .right_col {
+        display: block;
+        width: calc((100% - 10px) /2);
+    }
+    #promotion_ctn .left_col{
+        margin-right: 10px;
+    }
+    /*cart.html*/
+    #cart_ctn .left, #cart_ctn .right{
+        width: 100%;
+    }
+    #cart_ctn .right{
+        margin-left: 0;
+    }
+    /*bbq_burger*/
+    #product_info_ctn .big_img {
+        max-width: 490px;
+        margin-right: 20px;
+    }
+    #product_info_ctn .right .eve_items h2{
+        font-size: 20px;
+    }
+    #product_info_ctn .left{
+        width: 60%;
+    }
+    #product_info_ctn .right{
+        width: 40%;
+    }
+    /*burger.html*/
+    #burgers_ctn .left .food_ctn{
+        width: calc(100%);
+        padding: 10px;
+        padding-right: 0;
+    }
+    #burgers_ctn .left{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*bbq_burger*/
+    #product_info_ctn .left{
+        width: 100%;
+        border: none !important;
+    }
+    #product_info_ctn .right{
+        width: 100%;
+        padding-left: 0;
+    }
+    #product_info_ctn .right .eve_items h2{
+        font-size: 28px;
+    }
+    #product_info_ctn .big_img{
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    #burgers_ctn .left .food_ctn img{
+        max-width: 500px;
+    }
+}
