@@ -7,33 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="/root/css/reset.css">
-    <link rel="stylesheet" href="/root/css/style.css">
-    <link rel="stylesheet" href="/root/css/reponsive.css">
-    <link rel="stylesheet" type="text/css" href="/root/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/root/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/reponsive.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
     <!--Font-->
     <link rel="stylesheet" href="https://use.typekit.net/pfh4qwx.css">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./fontawesome-pro-6.0.0-web/css/all.css">
     <!--Bootstrap 5-->
-    <link rel="stylesheet" href="/root/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 </head>
 
-<body class="px-1 px-md-5 position-relative">
+<body class="position-relative">
     <!--Header-->
-    <div class="container-fluid row" id="header_ctn">
+    <div class="container-xxl m-auto row" id="header_ctn">
         <div class="col-md-4 text-center d-block d-md-none">
-            <img src="/root/images/logo-df.svg" alt="">
+            <img src="./images/logo-df.svg" alt="">
         </div>
         <div class="col-md-4 text-center text-md-start d-md-flex align-items-center phone_number">
             <i class="fa-solid fa-phone"></i>
             <a class="text-decoration-none" href="">+1 (800) 312-2121</a>
         </div>
         <div class="col-md-4 text-center d-none d-md-block">
-            <img src="/root/images/logo-df.svg" alt="">
+            <img src="./images/logo-df.svg" alt="">
         </div>
         <div class="col-md-4 text-center text-md-end d-md-flex align-items-center justify-content-end address">
             <i class="fa-solid fa-location-dot"></i>
@@ -41,30 +39,36 @@
         </div>
     </div>
     <!--Navigation-->
-    <div class="container-fluid d-md-flex row sticky-md-top mx-0 px-0" id="nav_ctn">
+    <div class="container-xxl m-auto row sticky-lg-top p-0" id="nav_ctn">
         <div class="col-lg-4"></div>
-        <nav class="navbar navbar-expand justify-content-center d-flex flex-wrap col-lg-4" id="navbar">
-            <div class="d-md-block">
-                <ul class="navbar-nav">
-                    <li class="nav-item drop_down px-3 px-lg-2 px-xl-3">
+        <nav class="navbar navbar-expand col-lg-4" id="navbar">
+                <ul class="navbar-nav d-flex justify-content-lg-between justify-content-end gap-4 w-100">
+                    <li class="nav-item drop_down">
                         <a class="nav-link" href="index.html">
-                            <span>Home&ensp;</span>
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            <span>Home&nbsp;<i class="fa-thin fa-angle-down"></i></span> 
                         </a>
+                        <!--Home dropdown-->
                         <div class="dropdown_content position-absolute p-4" id="home_dropdown">
-                            <div class="d-lg-flex flex-lg-wrap gap-lg-4 justify-content-between mb-3">
-                                <img class="dropdown_img m-auto m-lg-0 my-2" src="/root/images/menu/Frame-1.png"
-                                    alt="Burgers">
-                                <img class="dropdown_img m-auto m-lg-0 my-2" src="/root/images/menu/Frame-2.png"
-                                    alt="Pizza">
-                                <img class="dropdown_img m-auto m-lg-0 my-2" src="/root/images/menu/Frame-3.png"
-                                    alt="Drinks">
-                                <img class="dropdown_img m-auto m-lg-0 my-2" src="/root/images/menu/Frame-4.png"
-                                    alt="Pasta">
-                                <img class="dropdown_img m-auto m-lg-0 my-2" src="/root/images/menu/Frame-5.png"
-                                    alt="Soup">
-                                <img class="dropdown_img m-auto m-lg-0 my-2" src="/root/images/menu/Frame-6.png"
-                                    alt="Sushi">
+                            <!--Menu-->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                                <div class="col">
+                                    <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-1.png" alt="Burgers">
+                                </div>
+                                <div class="col">
+                                    <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-2.png" alt="Pizza">
+                                </div>
+                                <div class="col">
+                                    <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-3.png" alt="Drinks">
+                                </div>
+                                <div class="col">
+                                    <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-4.png" alt="Pasta">
+                                </div>
+                                <div class="col">
+                                    <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-5.png" alt="Soup">
+                                </div>
+                                <div class="col">
+                                    <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-6.png" alt="Sushi">
+                                </div>
                             </div>
                             <!--Special_offer-->
                             <div class="d-lg-flex justify-content-between px-5 px-lg-0">
@@ -92,14 +96,17 @@
                                 </div>
                             </div>
                     </li>
-                    <li class="nav-item px-3 px-lg-2 px-xl-3"><a class="nav-link" href="#about_ctn"><span>About</span></a></li>
-                    <li class="nav-item px-3 px-lg-2 px-xl-3"><a class="nav-link" href="#food_ctn"><span>Food</span></a></li>
-                    <li class="nav-item px-3 px-lg-2 px-xl-3"><a class="nav-link" href="#delivery_ctn"><span>Delivery</span></a></li>
-                    <li class="nav-item px-3 px-lg-2 px-xl-3"><a class="nav-link" href="#contact_ctn"><span>Contact</span></a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="#about_ctn"><span>About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#food_ctn"><span>Food</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="#delivery_ctn"><span>Delivery</span></a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="#contact_ctn"><span>Contact</span></a></li>
                 </ul>
-            </div>
         </nav>
-        <div class="d-flex align-items-center justify-content-lg-end justify-content-between px-0 col-lg-4">
+        <div class="d-flex align-items-center justify-content-lg-end justify-content-between col-lg-4">
             <div class="link_social ms-lg-2">
                 <a class="px-2" href=""><i class="fa-brands fa-facebook-f"></i></a>
                 <a class="px-2" href=""><i class="fa-brands fa-pinterest"></i></a>
@@ -121,7 +128,7 @@
                     </div>
                     <div class="dropdown_content position-absolute p-4" id="cart_dropdown">
                         <div class="d-flex">
-                            <img src="/root/images/food/burger/Bbq-burger.png" alt="">
+                            <img src="./images/food/burger/Bbq-burger.png" alt="">
                             <div>
                                 <a class="food_link" href="bbq_burger.html">BBQ Burger</a>
                                 <div class="d-flex price_block">
@@ -152,9 +159,9 @@
         </div>
     </div>
     <!--Banner-->
-    <div class="container-fluid mt-3 mt-xl-0" id="banner_ctn">
+    <div class="container-xxl mt-3 mt-xl-0" id="banner_ctn">
         <div class="container position-relative">
-            <img class="position-relative" src="/root/images/banner/food.svg" alt="">
+            <img class="position-relative" src="./images/banner/food.svg" alt="">
             <h1>DELIVERY</h1>
             <p>We’re proud to have our burger’s history <br>
                 being as long as 25 years!</p>
@@ -164,8 +171,8 @@
         </div>
     </div>
     <!--About-->
-    <div class="container-fluid d-md-flex mt-3 py-5 flex-md-row align-items-center" id="about_ctn">
-        <img class="col-md-6" src="/root/images/about/Untitled-1.png" alt="">
+    <div class="container-xxl m-auto d-md-flex mt-3 py-5 flex-md-row align-items-center" id="about_ctn">
+        <img class="col-md-6" src="./images/about/Untitled-1.png" alt="">
         <div class="mt-5 d-flex flex-column justify-content-around col-md-6 ps-5 py-lg-5">
             <h2>BEST PRISE ALWAYS</h2>
             <div>
@@ -180,15 +187,15 @@
                 authentic cuisine, professional chef and dedicated staff….</p>
             <div class="row d-flex">
                 <div class="col text-center">
-                    <img src="/root/images/about/icon/fav1.svg" alt="">
+                    <img src="./images/about/icon/fav1.svg" alt="">
                     <h3 class="py-2">GOOD FOOD</h3>
                 </div>
                 <div class="col text-center">
-                    <img src="/root/images/about/icon/fav2.svg" alt="">
+                    <img src="./images/about/icon/fav2.svg" alt="">
                     <h3 class="py-1">FAST DELIVERY</h3>
                 </div>
                 <div class="col text-center">
-                    <img src="/root/images/about/icon/fav3.svg" alt="">
+                    <img src="./images/about/icon/fav3.svg" alt="">
                     <h3 class="py-2">NICE PRISE</h3>
                 </div>
                 <div class="col-4"></div>
@@ -196,7 +203,7 @@
         </div>
     </div>
     <!--Recommend-->
-    <div class="container-fluid d-md-flex mt-3 py-5 flex-md-row" id="recommend_ctn">
+    <div class="container-xxl d-md-flex mt-3 py-5 flex-md-row" id="recommend_ctn">
         <!---->
         <div class="d-flex flex-column">
             <div class="price_block">
@@ -215,7 +222,7 @@
                     cheese and lettuce</p>
                 <a class="rounded-circle btn_add" href="">+</a>
             </div>
-            <img class="mt-3" src="/root/images/recommened/Depositphotos_12318613_el0.png" alt="">
+            <img class="mt-3" src="./images/recommened/Depositphotos_12318613_el0.png" alt="">
         </div>
         <!---->
         <div class="d-flex flex-column flex-md-column-reverse">
@@ -234,7 +241,7 @@
                     cheese and lettuce</p>
                 <a class="rounded-circle btn_add" href="">+</a>
             </div>
-            <img src="/root/images/recommened/Depositphotos_16238571_xl-1.png" alt="">
+            <img src="./images/recommened/Depositphotos_16238571_xl-1.png" alt="">
         </div>
         <!---->
         <div class="d-flex flex-column">
@@ -253,14 +260,14 @@
                     cheese and lettuce</p>
                 <a class="rounded-circle btn_add" href="">+</a>
             </div>
-            <img src="/root/images/recommened/Depositphotos_41260055_el0-1.png" alt="">
+            <img src="./images/recommened/Depositphotos_41260055_el0-1.png" alt="">
         </div>
     </div>
     <!--Promotion-->
-    <div class="container-fluid mt-3 py-5" id="promotion_ctn">
+    <div class="container-xxl mt-3 py-5" id="promotion_ctn">
         <!--Center-->
         <a class="center_col d-inline-block float-none ms-lg-2 mb-2 mb-lg-0 p-0" href="">
-            <img src="/root/images/promotion/Rectangle-5-1.png" alt="">
+            <img src="./images/promotion/Rectangle-5-1.png" alt="">
             <div class="content position-absolute top-50 start-50 translate-middle">
                 <h3>
                     <span>SPECIAL OFFER</span>
@@ -272,57 +279,57 @@
         </a>
         <!--Left-->
         <a class="left_col d-inline-block float-lg-start" href="">
-            <img src="/root/images/promotion/Rectangle-6-1.png" alt="">
+            <img src="./images/promotion/Rectangle-6-1.png" alt="">
             <div class="content position-absolute start-50 translate-middle-x">
-                <img class="mt-5" src="/root/images/promotion/happy.svg" alt="">
+                <img class="mt-5" src="./images/promotion/happy.svg" alt="">
                 <h4>HOURS</h4>
                 <p>Mon - Fri 1 P.M. - 3 P.M.</p>
             </div>
         </a>
         <!--Right-->
         <a class="right_col d-inline-block float-lg-end" href="">
-            <img src="/root/images/promotion/Rectangle-7.png" alt="">
+            <img src="./images/promotion/Rectangle-7.png" alt="">
             <div class="content position-absolute top-0 start-50 translate-middle-x">
-                <img class="mt-5" src="/root/images/promotion/15-off.svg" alt="">
+                <img class="mt-5" src="./images/promotion/15-off.svg" alt="">
                 <h4>FIRST ORDER</h4>
             </div>
         </a>
     </div>
     <!--Food-->
-    <div class="container-fluid mt-3 py-5" id="food_ctn">
+    <div class="container-xxl mt-3 py-5" id="food_ctn">
         <!--Menu-->
-        <div class="container-fluid d-flex justify-content-around flex-wrap" id="food_menu">
+        <div class="container-xxl d-flex justify-content-around flex-wrap" id="food_menu">
             <!---->
             <div class="d-flex flex-column align-items-center food_type mx-4" onclick="showFood(this)"
                 id="food_menu_burgers">
-                <img src="/root/images/food/menu/Frame-4.svg" alt="">
+                <img src="./images/food/menu/Frame-4.svg" alt="">
                 <span>BURGERS</span>
             </div>
             <!---->
             <div class="d-flex flex-column align-items-center food_type mx-4" onclick="showFood(this)"
                 id="food_menu_pizza">
-                <img src="/root/images/food/menu/Frame-1-1.svg" alt="">
+                <img src="./images/food/menu/Frame-1-1.svg" alt="">
                 <span>PIZZA</span>
             </div>
             <!---->
             <div class="d-flex flex-column align-items-center food_type mx-4" onclick="showFood(this)"
                 id="food_menu_drinks">
-                <img src="/root/images/food/menu/svg1.svg" alt="">
+                <img src="./images/food/menu/svg1.svg" alt="">
                 <span>DRINKS</span>
             </div>
             <!---->
             <div class="d-flex flex-column align-items-center food_type mx-4">
-                <img src="/root/images/food/menu/svg2.svg" alt="">
+                <img src="./images/food/menu/svg2.svg" alt="">
                 <span>PASTA</span>
             </div>
             <!---->
             <div class="d-flex flex-column align-items-center food_type mx-4" onclick="openList('Soup')">
-                <img src="/root/images/food/menu/svg3.svg" alt="">
+                <img src="./images/food/menu/svg3.svg" alt="">
                 <span>SOUP</span>
             </div>
             <!---->
             <div class="d-flex flex-column align-items-center food_type mx-4">
-                <img src="/root/images/food/menu/svg4.svg" alt="">
+                <img src="./images/food/menu/svg4.svg" alt="">
                 <span>SUSHI</span>
             </div>
         </div>
@@ -335,7 +342,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/burger/Bbq-burger.png" alt="">
+                                <img class="m-auto" src="./images/food/burger/Bbq-burger.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">BBQ Burger</a></h5>
@@ -355,7 +362,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/burger/Black_burger.png" alt="">
+                                <img class="m-auto" src="./images/food/burger/Black_burger.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Black Burger</a></h5>
@@ -375,7 +382,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/burger/chicken_burger.png" alt="">
+                                <img class="m-auto" src="./images/food/burger/chicken_burger.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Chicken Burger</a></h5>
@@ -395,7 +402,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/burger/Smoked_meat_burger.png" alt="">
+                                <img class="m-auto" src="./images/food/burger/Smoked_meat_burger.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Smoke meat Burger</a></h5>
@@ -415,7 +422,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/burger/Teriyaki_Chicken_Burger.png" alt="">
+                                <img class="m-auto" src="./images/food/burger/Teriyaki_Chicken_Burger.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Teriyaki Burger</a></h5>
@@ -435,7 +442,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/burger/Turkey-Burgers.png" alt="">
+                                <img class="m-auto" src="./images/food/burger/Turkey-Burgers.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Turkey Burger</a></h5>
@@ -460,7 +467,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pizza1_01.png" alt="">
+                                <img class="m-auto" src="./images/food/pizza/pizza1_01.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Peperoini Pizza</a></h5>
@@ -480,7 +487,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pizza3_02-400x400.png" alt="">
+                                <img class="m-auto" src="./images/food/pizza/pizza3_02-400x400.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Sausage Pizza</a></h5>
@@ -500,7 +507,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pizza4_01-400x400.png" alt="">
+                                <img class="m-auto" src="./images/food/pizza/pizza4_01-400x400.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Seafood Pizza</a></h5>
@@ -520,8 +527,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-calzone-png-1318170.png"
-                                    alt="">
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-calzone-png-1318170.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">??? Pizza</a></h5>
@@ -541,7 +547,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-pizza-hd-png-2518595.png"
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-pizza-hd-png-2518595.png"
                                     alt="">
                             </div>
                             <div class="info_block">
@@ -562,7 +568,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-pizza-png-image-2552770.png"
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-pizza-png-image-2552770.png"
                                     alt="">
                             </div>
                             <div class="info_block">
@@ -583,7 +589,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-veg-pizza-png-8300628.png"
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-veg-pizza-png-8300628.png"
                                     alt="">
                             </div>
                             <div class="info_block">
@@ -609,7 +615,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/drinks/PNG-0000001132.png" alt="">
+                                <img class="m-auto" src="./images/food/drinks/PNG-0000001132.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Peperoini Pizza</a></h5>
@@ -629,7 +635,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/drinks/banana-juice_01-400x400.png" alt="">
+                                <img class="m-auto" src="./images/food/drinks/banana-juice_01-400x400.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Sausage Pizza</a></h5>
@@ -649,7 +655,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/drinks/cola_01-400x400.png" alt="">
+                                <img class="m-auto" src="./images/food/drinks/cola_01-400x400.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">Seafood Pizza</a></h5>
@@ -669,8 +675,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/drinks/Depositphotos_43621059_el0.png"
-                                    alt="">
+                                <img class="m-auto" src="./images/food/drinks/Depositphotos_43621059_el0.png" alt="">
                             </div>
                             <div class="info_block">
                                 <h5><a class="" href="">??? Pizza</a></h5>
@@ -690,7 +695,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-pizza-hd-png-2518595.png"
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-pizza-hd-png-2518595.png"
                                     alt="">
                             </div>
                             <div class="info_block">
@@ -711,7 +716,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-pizza-png-image-2552770.png"
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-pizza-png-image-2552770.png"
                                     alt="">
                             </div>
                             <div class="info_block">
@@ -732,7 +737,7 @@
                     <div class="slick_item_ctn">
                         <div class="slick_item">
                             <div class="img_ctn ">
-                                <img class="m-auto" src="/root/images/food/pizza/pngkey.com-veg-pizza-png-8300628.png"
+                                <img class="m-auto" src="./images/food/pizza/pngkey.com-veg-pizza-png-8300628.png"
                                     alt="">
                             </div>
                             <div class="info_block">
@@ -754,15 +759,15 @@
         </div>
     </div>
     <!--Delivery-->
-    <div class="container-fluid mt-3 row position-relative p-0 pt-5" id="delivery_ctn">
+    <div class="container-xxl mt-3 row position-relative p-0 pt-5" id="delivery_ctn">
         <!---->
         <div
             class="col-lg d-flex align-items-center justify-content-center flex-column pt-5 pt-lg-1 ps-lg-1 pb-lg-5 my-1 my-lg-0">
-            <img class="" src="/root/images/delivery/Group-2-2.png" alt="">
+            <img class="" src="./images/delivery/Group-2-2.png" alt="">
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <div class="d-flex align-items-center my-3">
                     <h3>CHOOSE</h3>
-                    <img src="/root/images/delivery/icon/fav4.svg" alt="">
+                    <img src="./images/delivery/icon/fav4.svg" alt="">
                 </div>
                 <p class="text-center text-lg-start p-0 px-lg-5">Select food, which you want now the most and don’t
                     forget about drinks</p>
@@ -773,21 +778,21 @@
             <div class="">
                 <div class="d-flex align-items-center justify-content-center">
                     <h3>MAKE AN ORDER</h3>
-                    <img src="/root/images/delivery/icon/fav5.svg" alt="">
+                    <img src="./images/delivery/icon/fav5.svg" alt="">
                 </div>
                 <p class="text-center text-lg-start p-0 px-lg-5">Contact us and provide our agent with correct
                     information about your order</p>
             </div>
-            <img src="/root/images/delivery/Group-3-1.png" alt="">
+            <img src="./images/delivery/Group-3-1.png" alt="">
         </div>
         <!---->
         <div
             class="col-lg position-relative pe-0 d-flex flex-column align-items-lg-end align-items-center my-1 my-lg-0">
-            <img class="" src="/root/images/delivery/Depositphotos_59221053_el0.png" alt="">
+            <img class="" src="./images/delivery/Depositphotos_59221053_el0.png" alt="">
             <div>
                 <div class="d-flex align-items-center justify-content-center">
                     <h3>RECEIVE</h3>
-                    <img src="/root/images/delivery/icon/fav6.svg" alt="">
+                    <img src="./images/delivery/icon/fav6.svg" alt="">
                 </div>
                 <p class="text-center text-lg-start p-0 px-lg-5">Get your order as quickly as possible and enjoy
                     your
@@ -796,7 +801,7 @@
         </div>
     </div>
     <!--Contact-->
-    <div class="container-fluid mt-5 py-5 row" id="contact_ctn">
+    <div class="container-xxl m-auto mt-5 py-5 row" id="contact_ctn">
         <div class="col-xl-8 d-md-flex row py-5">
             <!---->
             <div class="col-md my-md-0 my-2">
@@ -843,24 +848,24 @@
         <div class="col-xl-4 my-md-0 my-2 py-5">
             <h3>INSTAGRAM</h3>
             <div class="d-flex justify-content-between flex-wrap">
-                <img src="/root/images/contact/banana-juice_01-400x400.png" alt="">
-                <img src="/root/images/contact/Depositphotos_41260055_el0-1.png" alt="">
-                <img src="/root/images/contact/pasta2_01.png" alt="">
-                <img src="/root/images/contact/pizza3_02.png" alt="">
-                <img src="/root/images/contact/sushi1_01.png" alt="">
-                <img src="/root/images/contact/Turkey-Burgers_01.png" alt="">
+                <img src="./images/contact/banana-juice_01-400x400.png" alt="">
+                <img src="./images/contact/Depositphotos_41260055_el0-1.png" alt="">
+                <img src="./images/contact/pasta2_01.png" alt="">
+                <img src="./images/contact/pizza3_02.png" alt="">
+                <img src="./images/contact/sushi1_01.png" alt="">
+                <img src="./images/contact/Turkey-Burgers_01.png" alt="">
             </div>
         </div>
     </div>
     <!--Map-->
-    <div class="container-fluid" id="map_ctn">
+    <div class="container-xxl" id="map_ctn">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d324.4939909713389!2d105.82234377118773!3d21.00747778670342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac81809d7cd7%3A0x23e0751c3c0f7805!2zVHLGsOG7nW5nIFRydW5nIGPhuqVwIE5naGnhu4dwIHbhu6UgdsOgIGThuqF5IG5naOG7gSBDw7RuZyDEkW_DoG4gVHAgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1660192728564!5m2!1svi!2s"
             width="1920" height="1080" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!--Footer-->
-    <div class="container-fluid my-3" id="footer_ctn">
+    <div class="container-xxl my-3" id="footer_ctn">
         <a href="">Zemez</a> ©. All rights reserved.
     </div>
 
@@ -871,9 +876,9 @@
     <!--jquery-->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="/root/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
     <!--My_script-->
-    <script src="/root/scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

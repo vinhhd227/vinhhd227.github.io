@@ -61,7 +61,7 @@
 }
 
 .dropdown_img {
-    width: calc((100% - 80px) / 3);
+    width: 100%;
 }
 
 .nav-link span {
