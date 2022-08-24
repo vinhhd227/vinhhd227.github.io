@@ -273,12 +273,12 @@
 
 .special_offer .so_title::after {
     content: "aaa";
-    background-image: url(../img/menu/Depositphotos_43621059_el0.png);
+    background-image: url(../images/menu/Depositphotos_43621059_el0.png);
 }
 
 /*Banner*/
 #banner_ctn {
-    background-image: url(../img/banner/Depositphotos_166567036_el0.png);
+    background-image: url(../images/banner/Depositphotos_166567036_el0.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
