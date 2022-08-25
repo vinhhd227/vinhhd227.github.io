@@ -1,3 +1,17 @@
+:root {
+    --dark: #333333;
+    --yellow: #ffc139;
+    --main-font: "Oswald", Sans-serif;
+    --sub-font: "Montserrat", Sans-serif;
+    font-weight: 500;
+}
+
+/*All*/
+.icon_yellow {
+    color: var(--yellow);
+    font-size: 23px;
+}
+
 /*index.html*/
 /*dropdown*/
 .removecaret.dropdown-toggle::after {
@@ -5,23 +19,29 @@
 }
 
 /*header*/
-.phone_number,
-.address,
+#header_ctn .phone_number {
+    letter-spacing: 2.1px;
+    line-height: 1.1em;
+}
+
+#header_ctn .phone_number:hover>a {
+    color: var(--yellow);
+}
+
+#header_ctn .address {
+    letter-spacing: 0.8px;
+    line-height: 0.8em;
+}
+
+#header_ctn .address,
+#header_ctn .phone_number {
+    font-size: 18px;
+}
+
 .opening_time,
 .send_email>i {
     color: #ffc139;
     font-size: 24px;
-}
-
-.phone_number>a,
-.address>span {
-    color: #333333;
-    font-size: 18px;
-    padding-left: 12px;
-}
-
-.phone_number>a:hover {
-    color: inherit;
 }
 
 /*Navigation*/
@@ -125,13 +145,13 @@
 }
 
 #cart_dropdown .price_block * {
-    font-family: "Oswald", Sans-serif;
+    font-family: var(--main-font);
     font-size: 18px;
     font-weight: 400;
     text-transform: none;
     font-style: normal;
     letter-spacing: 0px;
-    color: #ffc139;
+    color: var(--yellow);
 }
 
 #cart_dropdown .btn_ctn>a {
@@ -1440,7 +1460,8 @@
 #check_out_ctn .coupon_ctn div .showcoupon:hover {
     color: #333333;
 }
-#check_out_ctn .coupon_ctn p{
+
+#check_out_ctn .coupon_ctn p {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1450,7 +1471,11 @@
     text-align: left;
     color: #333333;
 }
-#check_out_ctn input,#check_out_ctn textarea, #check_out_ctn select, #check_out_ctn option{
+
+#check_out_ctn input,
+#check_out_ctn textarea,
+#check_out_ctn select,
+#check_out_ctn option {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1464,17 +1489,23 @@
     border: 1px solid #ebeced;
     background-color: #fff;
 }
-#check_out_ctn input:focus, #check_out_ctn textarea:focus, #check_out_ctn select:focus{
+
+#check_out_ctn input:focus,
+#check_out_ctn textarea:focus,
+#check_out_ctn select:focus {
     box-shadow: 0 5px 32px rgb(103 122 141 / 17%);
 }
-#check_out_ctn button{
+
+#check_out_ctn button {
     background-color: #ffc139;
     color: #fff;
 }
-#check_out_ctn button:hover{
+
+#check_out_ctn button:hover {
     background-color: rgb(255, 231, 95);
 }
-#check_out_ctn .btn_coupon{
+
+#check_out_ctn .btn_coupon {
     padding: 12px 20px;
     cursor: pointer;
     text-align: center;
@@ -1490,7 +1521,8 @@
     font-family: Montserrat, sans-serif;
     letter-spacing: 1px;
 }
-#check_out_ctn .checkout h3{
+
+#check_out_ctn .checkout h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -1501,7 +1533,8 @@
     color: #333333;
     margin: 0 0 10px;
 }
-#check_out_ctn .checkout label{
+
+#check_out_ctn .checkout label {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1511,7 +1544,8 @@
     text-align: left;
     color: #333333;
 }
-#check_out_ctn p{
+
+#check_out_ctn p {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1521,11 +1555,13 @@
     text-align: left;
     color: #333333;
 }
-#check_out_ctn table + p{
+
+#check_out_ctn table+p {
     font-size: 20px;
     font-weight: 400;
 }
-#check_out_ctn .btn_place_order{
+
+#check_out_ctn .btn_place_order {
     font-style: normal;
     font-weight: 900;
     font-size: 11px;
@@ -1539,7 +1575,9 @@
     width: 100%;
     border: none;
 }
-#check_out_ctn .table th,#check_out_ctn .table th > div{
+
+#check_out_ctn .table th,
+#check_out_ctn .table th>div {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1549,16 +1587,22 @@
     text-align: left;
     color: #333333;
 }
-#check_out_ctn .table th > div{
+
+#check_out_ctn .table th>div {
     text-align: right;
 }
-#check_out_ctn .table tr:last-child{
-    background-color: rgba(255,193,57,0.05);
+
+#check_out_ctn .table tr:last-child {
+    background-color: rgba(255, 193, 57, 0.05);
 }
-#check_out_ctn .table td,#check_out_ctn .table th{
+
+#check_out_ctn .table td,
+#check_out_ctn .table th {
     padding: 17px 20px;
 }
-#check_out_ctn .table td, #check_out_ctn .table td span{
+
+#check_out_ctn .table td,
+#check_out_ctn .table td span {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1568,10 +1612,13 @@
     text-align: left;
     color: #333333;
 }
-#check_out_ctn .table td > span{
+
+#check_out_ctn .table td>span {
     color: #ffc139;
 }
-#check_out_ctn .table .product_subtotal, #check_out_ctn .table .product_total{
+
+#check_out_ctn .table .product_subtotal,
+#check_out_ctn .table .product_total {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -1581,6 +1628,7 @@
     text-align: left;
     color: #333333;
 }
-#check_out_ctn .table .product_total{
+
+#check_out_ctn .table .product_total {
     font-size: calc(20px * 1.4);
 }

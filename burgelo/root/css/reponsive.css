@@ -18,11 +18,12 @@
 }
 @media screen and (max-width: 992px) {
 
-    .phone_number>a,
-    .address>span {
+    /*Header*/
+    #header_ctn .phone_number span:last-child,
+    #header_ctn .address span:last-child {
         font-size: 12px;
     }
-
+    /*Dropdown*/
     #home_dropdown #special_offer {
         width: 90%;
         margin: 10px auto;
