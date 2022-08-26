@@ -24,9 +24,9 @@
         font-size: 12px;
     }
     /*Dropdown*/
-    #home_dropdown #special_offer {
-        width: 90%;
-        margin: 10px auto;
+    #home_dropdown .special_offer {
+        width: 100%;
+        margin: auto;
     }
 
     /*Promotion*/

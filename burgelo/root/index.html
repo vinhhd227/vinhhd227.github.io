@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 </head>
 
-<body class="position-relative">
+<body class="position-relative px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5 px-xxl-0">
     <!--Header-->
     <div class="container-xxl m-auto row" id="header_ctn">
         <div class="col-md-4 text-center d-block d-md-none">
@@ -42,19 +42,19 @@
     </div>
     <!--Navigation-->
     <div class="container-xxl m-auto row sticky-lg-top p-0" id="nav_ctn">
-        <div class="col-lg-4"></div>
-        <nav class="navbar navbar-expand col-lg-4" id="navbar">
-            <ul class="navbar-nav d-flex justify-content-lg-between justify-content-end gap-4 w-100">
+        <div class="col-lg-3"></div>
+        <nav class="navbar navbar-expand col-lg-6" id="navbar">
+            <ul class="navbar-nav d-flex justify-content-md-center justify-content-end gap-4 w-100">
                 <li class="nav-item drop_down">
                     <a class="nav-link" href="index.html">
-                        <span>Home&nbsp;<i class="fa-thin fa-angle-down"></i></span>
+                        <span>Home&nbsp;<i class="fa-regular fa-chevron-down"></i></span>
                     </a>
                     <!--Home dropdown-->
                     <div class="dropdown_content position-absolute p-4" id="home_dropdown">
                         <!--Menu-->
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                             <div class="col">
-                                <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-1.png" alt="Burgers">
+                                <a href=""><img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-1.png" alt="Burgers"></a>
                             </div>
                             <div class="col">
                                 <img class="dropdown_img m-auto m-md-0" src="./images/menu/Frame-2.png" alt="Pizza">
@@ -73,28 +73,36 @@
                             </div>
                         </div>
                         <!--Special_offer-->
-                        <div class="d-lg-flex justify-content-between px-5 px-lg-0">
+                        <div class="row m-auto gap-4 g-4 mt-4 mt-lg-0">
                             <!--Yellow-->
-                            <div class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2"
-                                id="special_offer">
-                                <div class="d-inline-block d-flex flex-column so_title">
-                                    <span class="d-block">SPECIAL OFFER</span>
-                                    <span class="d-block">BUY 2 GET 3</span>
+                            <div class="col p-0">
+                                <div
+                                    class="d-flex justify-content-between align-items-center special_offer special_offer--bgyellow position-relative">
+                                    <div class="d-flex flex-column justify-content-between special_offer__title">
+                                        <span class="title--small">SPECIAL OFFER</span>
+                                        <span class="title--big">BUY 2 GET 3</span>
+                                    </div>
+                                    <div class="btn_ctn">
+                                        <a class="rounded-pill btn_order_now btn_dark hover_white me-3" href="">
+                                            ORDER NOW
+                                        </a>
+                                    </div>
                                 </div>
-                                <a class="rounded-pill btn_order_now btn_dark hover_white" href="">
-                                    ORDER NOW
-                                </a>
                             </div>
-                            <!--Black-->
-                            <div class="d-flex justify-content-between align-items-center flex-wrap px-4 py-2"
-                                id="special_offer">
-                                <div class="d-inline-block d-flex flex-column-reverse so_title">
-                                    <span class="d-block">ON YOUR ODER</span>
-                                    <span class="d-block">Get 25% OFF</span>
+                            <!--Dark-->
+                            <div class="col">
+                                <div
+                                    class="d-flex justify-content-between align-items-center flex-wrap special_offer special_offer--bgdark">
+                                    <div class="d-inline-block d-flex flex-column-reverse special_offer__title">
+                                        <span class="title--big">ON YOUR ODER</span>
+                                        <span class="title--small">Get 25% OFF</span>
+                                    </div>
+                                    <div class="btn_ctn">
+                                        <a class="rounded-pill btn_order_now btn_yellow hover_white me-3" href="">
+                                            ORDER NOW
+                                        </a>
+                                    </div>
                                 </div>
-                                <a class="rounded-pill btn_order_now btn_yellow hover_white" href="">
-                                    ORDER NOW
-                                </a>
                             </div>
                         </div>
                 </li>
@@ -105,7 +113,7 @@
                 <li class="nav-item"><a class="nav-link" href="#contact_ctn"><span>Contact</span></a></li>
             </ul>
         </nav>
-        <div class="d-flex align-items-center justify-content-lg-end justify-content-between col-lg-4">
+        <div class="d-flex align-items-center justify-content-lg-end justify-content-between col-lg-3">
             <div class="link_social ms-lg-2">
                 <a class="px-2" href=""><i class="fa-brands fa-facebook-f"></i></a>
                 <a class="px-2" href=""><i class="fa-brands fa-pinterest"></i></a>
@@ -114,13 +122,13 @@
             <div class="d-flex ps-lg-4 ps-md-3 search_cart">
                 <div class="search px-2 border-end">
                     <button class="btn btn-link p-0 shadow-none">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-light fa-magnifying-glass"></i>
                     </button>
                 </div>
                 <li class="d-block drop_down">
                     <div class="cart px-2">
                         <a class="text-decoration-none" href="">
-                            <i class="fa-solid fa-bag-shopping"></i>
+                            <i class="fa-light fa-bag-shopping"></i>
                             &ensp;
                             <span class="cart_count d-inline-block text-center">1</span>
                         </a>
@@ -158,7 +166,7 @@
         </div>
     </div>
     <!--Banner-->
-    <div class="container-xxl mt-3 mt-xl-0" id="banner_ctn">
+    <div class="container-xxl my-2 mt-xl-0" id="banner_ctn">
         <div class="container position-relative">
             <img class="position-relative" src="./images/banner/food.svg" alt="">
             <h1>DELIVERY</h1>
@@ -170,9 +178,11 @@
         </div>
     </div>
     <!--About-->
-    <div class="container-xxl m-auto d-md-flex mt-3 py-5 flex-md-row align-items-center" id="about_ctn">
-        <img class="col-md-6" src="./images/about/Untitled-1.png" alt="">
-        <div class="mt-5 d-flex flex-column justify-content-around col-md-6 ps-5 py-lg-5">
+    <div class="container-xxl row m-auto my-2 py-5" id="about_ctn">
+        <div class="col-md-6 d-flex align-items-center img_ctn">
+            <img src="./images/about/Untitled-1.png" alt="">
+        </div>
+        <div class="mt-5 d-flex flex-column justify-content-around col-md-6 ps-5">
             <h2>BEST PRISE ALWAYS</h2>
             <div>
                 <i class="fa-solid fa-star"></i>
@@ -758,7 +768,7 @@
         </div>
     </div>
     <!--Delivery-->
-    <div class="container-xxl mt-3 row position-relative p-0 pt-5" id="delivery_ctn">
+    <div class="container-xxl mt-3 row position-relative p-0 pt-5 m-auto" id="delivery_ctn">
         <!---->
         <div
             class="col-lg d-flex align-items-center justify-content-center flex-column pt-5 pt-lg-1 ps-lg-1 pb-lg-5 my-1 my-lg-0">

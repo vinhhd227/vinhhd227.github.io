@@ -1,9 +1,11 @@
 :root {
+    --white: #ffffff;
     --dark: #333333;
     --yellow: #ffc139;
     --main-font: "Oswald", Sans-serif;
     --sub-font: "Montserrat", Sans-serif;
     font-weight: 500;
+    font-size: 14px;
 }
 
 /*All*/
@@ -11,6 +13,10 @@
     color: var(--yellow);
     font-size: 23px;
 }
+
+.btn {}
+
+.btn--white
 
 /*index.html*/
 /*dropdown*/
@@ -96,22 +102,7 @@
     letter-spacing: 1.9px;
 }
 
-#home_dropdown #special_offer img {
-    width: 50%;
-    height: 50%;
-}
 
-#home_dropdown #special_offer {
-    width: calc((100% - 30px) / 2);
-}
-
-#home_dropdown #special_offer:nth-child(1) {
-    background-color: #ffc139;
-}
-
-#home_dropdown #special_offer:nth-child(2) {
-    background-color: #333333;
-}
 
 #cart_dropdown {
     width: 300px;
@@ -226,24 +217,31 @@
 }
 
 /*Special_offer*/
-#special_offer span:nth-child(2) {
-    text-align: left;
-    color: #FFFFFF;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1.3338em;
+.special_offer {
+    padding: 10px 0px 10px 40px;
 }
 
-#special_offer .so_title span:nth-child(1) {
-    text-align: left;
-    color: #FFFFFF;
-    font-size: 27px;
+.special_offer--bgyellow {
+    background-color: var(--yellow);
+}
+
+.special_offer--bgdark {
+    background-color: var(--dark);
+}
+.special_offer .special_offer__title{
+    color: var(--white);
+    font-family: var(--main-font);
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 1.3338em;
+    line-height: 3em;
+}
+.special_offer__title .title--small{ 
+    font-size: 27px;
     letter-spacing: 5.4px;
 }
-
+.special_offer__title .title--big{
+    font-size: 48px;
+}
 .btn_order_now {
     display: block;
     width: 180px;
@@ -291,9 +289,15 @@
     color: #fff;
 }
 
-.special_offer .so_title::after {
-    content: "aaa";
-    background-image: url(../images/menu/Depositphotos_43621059_el0.png);
+.special_offer--bgyellow .special_offer__title::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/menu/Depositphotos_43621059_el0.png) no-repeat;
+    position: absolute;
+    background-size: 120px;
+    top: 0%;
+    left: 45%;
 }
 
 /*Banner*/
@@ -331,6 +335,10 @@
 }
 
 /*About*/
+#about_ctn .img_ctn img {
+    width: 100%;
+}
+
 #about_ctn h2 {
     color: #333333;
     font-family: "Oswald", Sans-serif;
