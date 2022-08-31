@@ -14,6 +14,15 @@
     font-size: 23px;
 }
 
+a>* {
+    color: #333333;
+    ;
+}
+
+a:hover>* {
+    color: #ffc139;
+}
+
 /*Button*/
 .special_offer .btn_ctn,
 #banner_ctn .btn_ctn {
@@ -212,7 +221,6 @@
     letter-spacing: 7.6px;
 }
 
-
 /*Cart Dropdown*/
 
 #cart_dropdown {
@@ -344,7 +352,7 @@
 }
 
 #banner_ctn h1 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 64px;
     font-weight: 400;
     text-transform: uppercase;
@@ -354,13 +362,12 @@
 
 #banner_ctn p {
     color: #ffffff;
-    font-family: "Montserrat", Sans-serif;
+    font-family: var(--sub-font);
     font-size: 14px;
     font-weight: 400;
-    text-transform: none;
-    font-style: normal;
     line-height: 1.8em;
     letter-spacing: 0px;
+    max-width: 300px;
 }
 
 /*About*/
@@ -369,33 +376,24 @@
 }
 
 #about_ctn h2 {
-    color: #333333;
-    font-family: "Oswald", Sans-serif;
     font-size: 48px;
     font-weight: 400;
     text-transform: uppercase;
-    font-style: normal;
     letter-spacing: 4.8px;
 }
 
 #about_ctn p {
-    color: #333333;
-    font-family: "Montserrat", Sans-serif;
+    font-family: var(--sub-font);
     font-size: 14px;
     font-weight: 300;
-    text-transform: none;
-    font-style: normal;
     line-height: 2.1em;
     letter-spacing: 1.4px;
 }
 
 #about_ctn h3 {
-    color: #333333;
-    font-family: "Oswald", Sans-serif;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    font-style: normal;
     line-height: 1rem;
     letter-spacing: 1.3px;
 }
@@ -482,104 +480,73 @@
 }
 
 /*Promotion*/
-
-
-#promotion_ctn>a {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    display: block;
-}
-
-#promotion_ctn .content {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    text-align: center;
-    top: 50%;
-}
-
-#promotion_ctn .center_col {
-    width: 50.5%;
-}
-
-
-#promotion_ctn .left_col,
-#promotion_ctn .right_col {
-    width: 24.05%;
-    object-fit: contain;
-}
-
-#promotion_ctn .center_col img,
-#promotion_ctn .left_col img,
-#promotion_ctn .right_col img {
-    z-index: 2;
-    position: relative;
+#promotion_ctn .promotion__left,
+#promotion_ctn .promotion__main,
+#promotion_ctn .promotion__right {
+    height: 560px;
     width: 100%;
-    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-#promotion_ctn .center_col h3 {
-    order: 1;
-    text-align: center;
-    color: #333333;
-    font-family: "Oswald", Sans-serif;
+#promotion_ctn .promotion__left {
+    background-image: url(../images/promotion/Rectangle-6-1.png);
+}
+
+#promotion_ctn .promotion__main {
+    background-image: url(../images/promotion/Rectangle-5-1.png);
+
+}
+
+#promotion_ctn .promotion__right {
+    background-image: url(../images/promotion/Rectangle-7.png);
+}
+
+#promotion_ctn a:hover>* {
+    color: initial;
+}
+
+.promotion__main,
+.promotion__left,
+.promotion__right {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#promotion_ctn h3 {
     font-size: 72px;
     text-transform: uppercase;
     line-height: 1em;
     letter-spacing: 0px;
-    white-space: nowrap;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: initial;
 }
 
-#promotion_ctn .center_col h3 span {
+#promotion_ctn h3 span {
     font-size: 40px;
     letter-spacing: 8px;
-    color: #333333;
 }
 
-#promotion_ctn .center_col p {
-    order: 2;
-    text-align: center;
-    color: #333333;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 14px;
+#promotion_ctn h3+p {
+    font-family: var(--sub-font);
     font-weight: 300;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin: 19px 0px 0px 0px;
 }
 
-#promotion_ctn .left_col h4 {
-    order: 1;
-    text-align: center;
-    color: #333333;
-    font-family: "Oswald", Sans-serif;
+#promotion_ctn h4 {
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 6.8px;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: initial;
 }
 
-#promotion_ctn .left_col p {
-    order: 2;
-    text-align: center;
-    color: #333333;
-    font-family: "Oswald", Sans-serif;
+#promotion_ctn h4+p {
     font-size: 18px;
     font-weight: 400;
-    text-transform: capitalize;
     letter-spacing: 0px;
-    white-space: nowrap;
 }
 
-#promotion_ctn .left_col .content img {
-    margin-top: 10px;
-}
 
 #promotion_ctn .right_col h4 {
     order: 1;

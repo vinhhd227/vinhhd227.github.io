@@ -107,36 +107,9 @@
     }
 
     /*Promotion*/
-    #promotion_ctn {
-        display: flex;
-        flex-wrap: wrap;
+    
 
-    }
-
-    #promotion_ctn .center_col {
-        display: block;
-        width: 100%;
-    }
-
-    #promotion_ctn .left_col,
-    #promotion_ctn .right_col {
-        display: block;
-        width: calc((100% - 10px) /2);
-    }
-
-    #promotion_ctn .left_col {
-        margin-right: 10px;
-    }
-
-    /*cart.html*/
-    #cart_ctn .left,
-    #cart_ctn .right {
-        width: 100%;
-    }
-
-    #cart_ctn .right {
-        margin-left: 0;
-    }
+    
 
     /*bbq_burger*/
     #product_info_ctn .big_img {
@@ -250,7 +223,7 @@
     }
 
     .special_offer--bgdark .title--big {
-        letter-spacing: 5px;
+        letter-spacing: 10px;
     }
 
     .special_offer--bgyellow .special_offer__title::after {
@@ -260,5 +233,22 @@
         left: 60%;
         background: url(../images/menu/Depositphotos_43621059_el0.png) no-repeat;
     }
-
+    /*Banner*/
+    #banner_ctn{
+        padding-left: 60px;
+    }
+    #banner_ctn h1{
+        letter-spacing: 8px;
+        font-size: 50px;
+    }
+    /*Promotion*/
+    #promotion_ctn .promotion__main{
+        font-size: 12px;
+    }
+    #promotion_ctn .promotion__main h3{
+        font-size: 62px;
+    }
+    #promotion_ctn .promotion__main h3 span{
+         font-size: 30px;   
+    }
 }
