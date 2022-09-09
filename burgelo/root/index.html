@@ -15,7 +15,7 @@
     <!--Font-->
     <link rel="stylesheet" href="https://use.typekit.net/pfh4qwx.css">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="./fontawesome-pro-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <!--Bootstrap 5-->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 </head>
@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start phone_number">
             <a class="text-decoration-none" href="tel:+1 (800) 312-2121">
-                <span class="icon_yellow"><i class="fa-solid fa-phone"></i></span>
+                <span class="icon--yellow"><i class="fa-solid fa-phone"></i></span>
                 <span class="ps-3">+1 (800) 312-2121</span>
             </a>
         </div>
@@ -36,7 +36,7 @@
             <a href="index.html"><img src="./images/logo-df.svg" alt=""></a>
         </div>
         <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end address">
-            <span class="icon_yellow"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="icon--yellow"><i class="fa-solid fa-location-dot"></i></span>
             <span class="ps-3">172 14th Street, Office 503, NY</span>
         </div>
     </div>
@@ -328,27 +328,6 @@
                 </a>
             </div>
         </div>
-        <!-- Center
-        <a class="center_col d-inline-block float-none ms-lg-2 mb-2 mb-lg-0 p-0" href="">
-            <img src="./images/promotion/Rectangle-5-1.png" alt="">
-            <div class="content position-absolute top-50 start-50 translate-middle">
-                <h3>
-                    <span>SPECIAL OFFER</span>
-                    <br>
-                    BUY 2 GET 3
-                </h3>
-                <p>Use Our Special Offer Quicker!</p>
-            </div>
-        </a>
-        
-        <a class="left_col d-inline-block float-lg-start" href="">
-            <img src="./images/promotion/Rectangle-6-1.png" alt="">
-            
-        </a>
-        
-        <a class="right_col d-inline-block float-lg-end" href="">
-            
-        </a> -->
     </div>
     <!--Food-->
     <div class="container-xxl mt-3 py-5" id="food_ctn">
@@ -392,9 +371,9 @@
         <div class="mt-5" id="food_list">
             <!--Burger-->
             <div class="food_menu_list" id="burgers">
-                <div class="slick_slide responsive d-flex justify-content-between">
+                <div class="slick_slide responsive d-flex justify-content-between row">
                     <!---->
-                    <div class="slick_item_ctn">
+                    <div class="slick_item_ctn col">
                         <div class="slick_item">
                             <div class="img_ctn ">
                                 <img class="m-auto" src="./images/food/burger/Bbq-burger.png" alt="">
@@ -405,16 +384,21 @@
                                     <span class="currency">$</span>
                                     <span class="price">5.00</span>
                                 </div>
-                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham hock...
+                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham
+                                    hock...
                                 </p>
-                                <a class="rounded-pill btn_yellow" href=""><i class="fa-solid fa-cart-shopping"></i>ADD
-                                    TO
-                                    CART</a>
+                                <div class="btn_ctn">
+                                    <a class="btn__a rounded-pill btn--yellow btn--hover" href="">
+                                        <span><i class="fa-solid fa-cart-shopping"></i>
+                                            ADD TO CART</span>
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <!---->
-                    <div class="slick_item_ctn">
+
+                    <div class="slick_item_ctn col">
                         <div class="slick_item">
                             <div class="img_ctn ">
                                 <img class="m-auto" src="./images/food/burger/Black_burger.png" alt="">
@@ -425,7 +409,8 @@
                                     <span class="currency">$</span>
                                     <span class="price">14.00</span>
                                 </div>
-                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham hock...
+                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham
+                                    hock...
                                 </p>
                                 <a class="rounded-pill btn_yellow" href=""><i class="fa-solid fa-cart-shopping"></i>ADD
                                     TO
@@ -433,8 +418,8 @@
                             </div>
                         </div>
                     </div>
-                    <!---->
-                    <div class="slick_item_ctn">
+
+                    <div class="slick_item_ctn col">
                         <div class="slick_item">
                             <div class="img_ctn ">
                                 <img class="m-auto" src="./images/food/burger/chicken_burger.png" alt="">
@@ -445,7 +430,8 @@
                                     <span class="currency">$</span>
                                     <span class="price">10.00</span>
                                 </div>
-                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham hock...
+                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham
+                                    hock...
                                 </p>
                                 <a class="rounded-pill btn_yellow" href=""><i class="fa-solid fa-cart-shopping"></i>ADD
                                     TO
@@ -453,8 +439,8 @@
                             </div>
                         </div>
                     </div>
-                    <!---->
-                    <div class="slick_item_ctn">
+
+                    <div class="slick_item_ctn col">
                         <div class="slick_item">
                             <div class="img_ctn ">
                                 <img class="m-auto" src="./images/food/burger/Smoked_meat_burger.png" alt="">
@@ -465,7 +451,8 @@
                                     <span class="currency">$</span>
                                     <span class="price">15.00</span>
                                 </div>
-                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham hock...
+                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham
+                                    hock...
                                 </p>
                                 <a class="rounded-pill btn_yellow" href=""><i class="fa-solid fa-cart-shopping"></i>ADD
                                     TO
@@ -473,8 +460,8 @@
                             </div>
                         </div>
                     </div>
-                    <!---->
-                    <div class="slick_item_ctn">
+
+                    <div class="slick_item_ctn col">
                         <div class="slick_item">
                             <div class="img_ctn ">
                                 <img class="m-auto" src="./images/food/burger/Teriyaki_Chicken_Burger.png" alt="">
@@ -485,7 +472,8 @@
                                     <span class="currency">$</span>
                                     <span class="price">14.00</span>
                                 </div>
-                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham hock...
+                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham
+                                    hock...
                                 </p>
                                 <a class="rounded-pill btn_yellow" href=""><i class="fa-solid fa-cart-shopping"></i>ADD
                                     TO
@@ -493,8 +481,8 @@
                             </div>
                         </div>
                     </div>
-                    <!---->
-                    <div class="slick_item_ctn">
+
+                    <div class="slick_item_ctn col">
                         <div class="slick_item">
                             <div class="img_ctn ">
                                 <img class="m-auto" src="./images/food/burger/Turkey-Burgers.png" alt="">
@@ -505,7 +493,8 @@
                                     <span class="currency">$</span>
                                     <span class="price">13.00</span>
                                 </div>
-                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham hock...
+                                <p class="">Pork, jowl salami andouille porchetta shankle chuck brisket ham
+                                    hock...
                                 </p>
                                 <a class="rounded-pill btn_yellow" href=""><i class="fa-solid fa-cart-shopping"></i>ADD
                                     TO
@@ -513,6 +502,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <!--Pizza-->
@@ -876,25 +866,29 @@
                 </div>
             </div>
             <!---->
-            <div class="col-md my-md-0 my-2">
+            <div class="col-md my-md-0 my-2" id="contact_us">
                 <h3>CONTACT US</h3>
                 <div class="d-flex flex-column justify-content-between">
                     <div class="address mt-2">
-                        <i class="fa-solid fa-location-dot mx-2"></i>
-                        <span class="p-0">172 14th Street, Office 503, NY</span>
+                        <span class="icon--yellow"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="ps-3">172 14th Street, Office 503, NY</span>
                     </div>
                     <div class="phone_number mt-2">
-                        <i class="fa-solid fa-phone mx-2"></i>
-                        <a class="text-decoration-none p-0" href="">+1 (800) 312-2121</a>
+                        <a class="text-decoration-none" href="tel:+1 (800) 312-2121">
+                            <span class="icon--yellow"><i class="fa-solid fa-phone"></i></span>
+                            <span class="ps-3">+1 (800) 312-2121</span>
+                        </a>
                     </div>
                     <div class="opening_time d-flex mt-2">
-                        <i class="fa-regular fa-clock mx-2"></i>
+                        <span class="icon--yellow"><i class="fa-light fa-clock mx-2"></i></span>
                         <span> Monday-Friday: 9:00 am - 6:00 pm <br>
                             Saturday: 9:00 am - 4:00 pm</span>
                     </div>
                     <div class="send_email mt-2">
-                        <i class="fa-regular fa-envelope mx-2"></i>
-                        <a class="text-decoration-none" href=""><span>Send us an email</span></a>
+                        <a class="text-decoration-none" href="mailto:someone@example.com">
+                            <span class="icon--yellow"><i class="fa-light fa-envelope"></i></span>
+                            <span>Send us an email</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -902,13 +896,13 @@
         <!---->
         <div class="col-xl-4 my-md-0 my-2 py-5">
             <h3>INSTAGRAM</h3>
-            <div class="d-flex justify-content-between flex-wrap">
-                <img src="./images/contact/banana-juice_01-400x400.png" alt="">
-                <img src="./images/contact/Depositphotos_41260055_el0-1.png" alt="">
-                <img src="./images/contact/pasta2_01.png" alt="">
-                <img src="./images/contact/pizza3_02.png" alt="">
-                <img src="./images/contact/sushi1_01.png" alt="">
-                <img src="./images/contact/Turkey-Burgers_01.png" alt="">
+            <div class="row row-cols-3 g-4">
+                <div class="col img_ctn"><img src="./images/contact/banana-juice_01-400x400.png" alt=""></div>
+                <div class="col img_ctn"><img src="./images/contact/Depositphotos_41260055_el0-1.png" alt=""></div>
+                <div class="col img_ctn"><img src="./images/contact/pasta2_01.png" alt=""></div>
+                <div class="col img_ctn"><img src="./images/contact/pizza3_02.png" alt=""></div>
+                <div class="col img_ctn"><img src="./images/contact/sushi1_01.png" alt=""></div>
+                <div class="col img_ctn"><img src="./images/contact/Turkey-Burgers_01.png" alt=""></div>
             </div>
         </div>
     </div>

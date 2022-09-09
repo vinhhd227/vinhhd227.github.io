@@ -6,10 +6,14 @@
     --sub-font: "Montserrat", Sans-serif;
     font-weight: 500;
     font-size: 14px;
+    color: var(--dark);
 }
 
 /*All*/
-.icon_yellow {
+.img_ctn img {
+    width: 100%;
+}
+.icon--yellow {
     color: var(--yellow);
     font-size: 23px;
 }
@@ -32,7 +36,15 @@ a:hover>* {
     display: flex;
     align-items: center;
 }
-
+.slick_item_ctn .btn_ctn {
+    width: 167px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+.slick_item_ctn .btn__a{
+    padding: 8px 24px 8px 17px;
+}
 .btn__a {
     cursor: pointer;
     border: none;
@@ -371,9 +383,7 @@ a:hover>* {
 }
 
 /*About*/
-#about_ctn .img_ctn img {
-    width: 100%;
-}
+
 
 #about_ctn h2 {
     font-size: 48px;
@@ -583,23 +593,16 @@ a:hover>* {
 
 
 /*Contact*/
-#contact_ctn img {
-    max-width: 30%;
-}
 
 #contact_ctn h3 {
-    color: #333333;
-    font-family: "Oswald", Sans-serif;
     font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
-    font-style: normal;
     letter-spacing: 2.4px;
 }
 
 #contact_ctn p,
 #contact_ctn span {
-    color: #333333;
     font-family: "Montserrat", Sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -615,7 +618,6 @@ a:hover>* {
 
 #contact_ctn .phone_number>a {
     font-size: 24px;
-    font-family: "Oswald", Sans-serif;
     font-weight: 500;
     text-transform: none;
     font-style: normal;
@@ -672,10 +674,6 @@ a:hover>* {
     width: 100%;
 }
 
-.img_ctn img {
-    width: 100%;
-    object-fit: cover;
-}
 
 .slick_item .info_block {
     min-height: 180px;
